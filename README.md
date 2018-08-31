@@ -17,7 +17,7 @@ Returned alle Userinfos
   "actionname": "get_account_details",
   "login": {
      "token": "(token)",
-    “source”: “(app or website)”
+     "source": "(app or website)"
   }
 }
 ```
@@ -30,7 +30,7 @@ Returned alle Userinfos
   "action_result": [
   {
     "display_name": "(vorname)",
-    “ad_user": "(nachname)",
+    "ad_user": "(nachname)",
     "bananas_to_spend": (anzahl),
     "bananas_received": (anzahl),
     "is_admin": 0
@@ -53,7 +53,7 @@ Liefert eine Liste alle User, allerdings ohne sensible Infos wie AD User oder To
   "actionname": "get_user_list",
    "login": {
      "token": "(token)",
-     “source”: “(app or website)”
+     "source": "(app or website)"
   }
 }
 ```
