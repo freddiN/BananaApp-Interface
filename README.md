@@ -16,8 +16,8 @@ Returned alle Userinfos
 {
   "actionname": "get_account_details",
   "login": {
-     "token": "(token)",
-     "source": "(app or website)"
+    "token": "(token)",
+    "source": "(app or website)"
   }
 }
 ```
@@ -51,9 +51,9 @@ Liefert eine Liste alle User, allerdings ohne sensible Infos wie AD User oder To
 ```
 {
   "actionname": "get_user_list",
-   "login": {
-     "token": "(token)",
-     "source": "(app or website)"
+  "login": {
+    "token": "(token)",
+    "source": "(app or website)"
   }
 }
 ```
@@ -64,21 +64,21 @@ Liefert eine Liste alle User, allerdings ohne sensible Infos wie AD User oder To
   "actionname": "get_user_list",
   "status": "get_user_list ok",
   "action_result": [
-    {
-      "id": "(user0_id)",
-      "display_name": "(user0_display)",
-      "ad_user": "(user0_ad_user)",
-      "bananas_to_spend": (anzahl),
-      "bananas_received": (anzahl),
-      "is_admin": 0
-    },
-    {
-      "id": ""(user1_id)",
-      "display_name": "(user1_display)",
-      "ad_user": "(user1_aduser)",
-      "bananas_to_spend": (anzahl),
-      "bananas_received": (anzahl),
-      "is_admin": 1
+  {
+    "id": "(user0_id)",
+    "display_name": "(user0_display)",
+    "ad_user": "(user0_ad_user)",
+    "bananas_to_spend": (anzahl),
+    "bananas_received": (anzahl),
+    "is_admin": 0
+   },
+   {
+     "id": ""(user1_id)",
+     "display_name": "(user1_display)",
+     "ad_user": "(user1_aduser)",
+     "bananas_to_spend": (anzahl),
+     "bananas_received": (anzahl),
+     "is_admin": 1
     }
   ]
 }
@@ -96,13 +96,13 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
 ```
 {
   "actionname": "get_transaction_list",
-   "login": {
-      "token": "(token)",
-      "source": "(app or website)"
+  "login": {
+    "token": "(token)",
+    "source": "(app or website)"
   },
   "action_request": {
-       "limit": 100
-     }
+    "limit": 100
+  }
 }
 ```
 
@@ -112,22 +112,22 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
   "actionname": "get_transaction_list",
   "status": "get_transaction_list ok",
   "action_result": [
-    {
-      "id": "0",
-      "timestamp": "10.05.2017 15:34:24",
-      "from_user": "(user)",
-      "to_user": "(user)",
-      "bananacount": 1,
-      "comment": "(kommentar)"
-    },
-    {
-      "id": "1",
-      "timestamp": "11.05.2017 12:34:24",
-      "from_user": "(user)",
-      "to_user": "(user)",
-      "bananacount": 1,
-      "comment": "(kommentar)"
-    }
+  {
+    "id": "0",
+    "timestamp": "10.05.2017 15:34:24",
+    "from_user": "(user)",
+    "to_user": "(user)",
+    "bananacount": 1,
+    "comment": "(kommentar)"
+  },
+  {
+    "id": "1",
+    "timestamp": "11.05.2017 12:34:24",
+    "from_user": "(user)",
+    "to_user": "(user)",
+    "bananacount": 1,
+    "comment": "(kommentar)"
+  }
   ]
 }
 ```
@@ -145,9 +145,9 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
 {
   "actionname": "create_transaction",
   "login": {
-      "token": "(token)",
-      "source": "(app or website)"
-  }
+    "token": "(token)",
+    "source": "(app or website)"
+  },
   "action_request": {
     "to_user": "(user_display_name)",
     "banana_count": 1,
@@ -162,7 +162,7 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
   "actionname": "create_transaction",
   "status": "send bananas ok",
   "action_result": [
-   1337
+    1337
   ]
 }
 ```
@@ -173,10 +173,10 @@ EDIT_USER
 ```
 {
   "actionname": "edit_user",
-   "login": {
-      "token": "(token)",
-      "source": "(app or website or bot)"
-  }
+  "login": {
+    "token": "(token)",
+    "source": "(app or website or bot)"
+  },
   "action_request": {
     "display_name": "Britney",
     "ad_user": "britney.spears",
@@ -184,7 +184,7 @@ EDIT_USER
     "banana_to_spend": 10,
     "token_duration”: 168,
     "login_token”: “sda234ass234234adsad2342324da”,
-    “token_expiration_timestamp” : “12.09.2017 12:12:12”
+    "token_expiration_timestamp" : "12.09.2017 12:12:12"
     "isNewUser": 1
   }
 }
@@ -196,7 +196,7 @@ EDIT_USER
   "actionname": "edit_user",
   "status": edit user ok",
   "action_result": [
-   true
+    true
   ]
 }
 ```
@@ -218,8 +218,8 @@ Invalidiert den Token
 {
   "actionname": "logout",
   "login": {
-      "token": "(token)",
-      "source": "(app or website)"
+    "token": "(token)",
+    "source": "(app or website)"
   }
 }
 ```
@@ -241,8 +241,8 @@ Invalidiert den Token
 {
   "actionname": "banana_rain",
   "login": {
-      "token": "(token)",
-      "source": "(app or website)"
+    "token": "(token)",
+    "source": "(app or website)"
   }
 }
 ```
@@ -264,10 +264,10 @@ Invalidiert den Token
 ```
 {
   "actionname": "edit_transaction",
-   "login": {
-      "token": "(token)",
-      "source": "(app or website or bot)"
-  }
+  "login": {
+    "token": "(token)",
+    "source": "(app or website or bot)"
+  },
   "action_request": {
     "transaction_id": "12345",
     "comment": "sdsdff sdf ssdfsdffds sdf sdfsdsdfsdf sd",
@@ -281,7 +281,7 @@ Invalidiert den Token
   "actionname": "edit_transaction",
   "status": edit_transaction ok",
   "action_result": [
-   true
+    true
   ]
 }
 ```
