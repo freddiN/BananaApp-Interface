@@ -29,8 +29,8 @@ Returned alle Userinfos
   "status": "login ok",
   "action_result": [
   {
-    "display_name": "(vorname)",
-    "ad_user": "(nachname)",
+    "display_name": "(anzeigename)",
+    "ad_user": "(ad account)",
     "bananas_to_spend": (anzahl),
     "bananas_received": (anzahl),
     "is_admin": 0
