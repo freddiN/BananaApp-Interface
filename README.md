@@ -274,6 +274,7 @@ Invalidiert den Token
   "action_request": {
     "transaction_id": "12345",
     "comment": "sdsdff sdf ssdfsdffds sdf sdfsdsdfsdf sd",
+    "category": "blah,
   }
 }
 ```
