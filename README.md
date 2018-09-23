@@ -119,6 +119,7 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
     "to_user": "(user)",
     "bananacount": 1,
     "comment": "(kommentar)"
+    "category": "(kategorie)"
   },
   {
     "id": "1",
@@ -127,6 +128,7 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
     "to_user": "(user)",
     "bananacount": 1,
     "comment": "(kommentar)"
+    "category": "(kategorie)"
   }
   ]
 }
@@ -152,6 +154,7 @@ Liefert eine Liste aller Transaktionen, aktuell auf 1000 limitiert
     "to_user": "(user_display_name)",
     "banana_count": 1,
     "comment": "(kommentar)"
+    "category": "(kategorie)"
   }
 }
 ```
