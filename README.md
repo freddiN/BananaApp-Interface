@@ -246,6 +246,7 @@ Invalidiert den Token
   "login": {
     "token": "(token)",
     "source": "(app or website)"
+    "magic_key": "(key from config)"
   }
 }
 ```
